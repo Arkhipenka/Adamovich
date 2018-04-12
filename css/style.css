@@ -1,0 +1,302 @@
+@font-face{
+	font-family: "Open Sans";
+	src: url("../font/OpenSans-Bold.ttf"),
+		url("../font/OpenSans-BoldItalic.ttf"),
+		url("../font/OpenSans-ExtraBold.ttf"),
+		url("../font/OpenSans-ExtraBoldItalic.ttf"),
+		url("../font/OpenSans-Italic.ttf"),
+		url("../font/OpenSans-Light.ttf"),
+		url("../font/OpenSans-LightItalic.ttf"),
+		url("../font/OpenSans-Regular.ttf"),
+		url("../font/OpenSans-Semibold.ttf"),
+		url("../font/"OpenSans-SemiboldItalic.ttf);
+}
+@font-face{
+	font-family: "Bebas";
+	src:url("../font/BebasNeue Regular.otf"),
+		url("../font/BebasNeue Thin.otf"),
+		url("../font/BebasNeue Light.otf"),
+		url("../font/BebasNeue Book.otf"),
+		url("../font/BebasNeue Bold.otf");
+}
+@font-face{
+	font-family: "Nobile";
+	src:url("../font/Nobile-Regular.ttf"),
+		url("../font/Nobile-Regular.ttf"),
+		url("../font/Nobile-MediumItalic.ttf"),
+		url("../font/Nobile-Italic.ttf"),
+		url("../font/Nobile-BoldItalic.ttf"),
+		url("../font/Nobile-Bold.ttf");
+}
+html, body{
+	height: 100%;
+	width: 100%
+}
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+
+}
+main{
+	flex-grow: 1;
+}
+.heading{
+	font-family: "Bebas", sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+}
+header ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+}
+.social-nav{
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	padding: 3px 0;
+	flex-grow: 1;
+	border-bottom: 1px solid #ffffff;
+	background-image: linear-gradient(to right,rgba(192,199,203,0.7),#8aacc1);
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-grow: 3;
+	padding: 0px 70px;
+	background:rgba(33,33,33,0.9);
+}
+.nav{
+	font-family: "Bebas", sans-serif;
+	padding: 22px;
+	font-size: 20px;
+}
+.nav:hover{
+	background: rgba(0,0,0,0.8);
+	box-shadow: 2px 2px 5px 0 #333;
+	border-radius: 5%;
+	color: #bc5519;
+}
+header a {
+	color: #ffffff;
+}
+.social:not(:last-child){
+	margin-right: 15px;
+}
+.social{
+	background: #fff;
+	padding: 12px;
+	border-radius: 50px;
+
+}
+.lang-nav{
+	display: flex;
+	flex-direction: column;
+	font-family: "Nobile", sans-serif;
+	font-size: 10px;
+}
+.lang-nav li:not(:last-child){
+	margin-bottom: 5px;
+}
+.lang-nav a:hover{
+	color: #f66d08;
+}
+main{
+	margin: 0;
+}
+.general{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 700px;
+	width: 100%
+	margin: 100px 70px 0px;
+	background: #666666 url(../img/остановка.png) no-repeat 50% 50%;
+	color: #ffffff;
+
+}
+.head-gen{
+	font-family: "Nobile", sans-serif;
+	font-size: 15px;
+}
+.heading-general{
+	font-family: "Bebas",sans-serif;
+	font-size: 60px;
+
+}
+.text-timer{
+	font-family:"Open Sans", sans-serif;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+.timer{
+	font-family: "Bebas",sans-serif;
+	font-size: 36px;
+	color: #31221e;
+	margin: 10px auto;
+	padding: 5px;
+	background: rgba(153,192,220,0.7);
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px 0 #091d2b;
+}
+.general button{
+	outline: none;
+	height: 50px;
+	width: 200px;
+	background: #ffffff;
+	font-size: 14px;
+	border: none;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+.general button:hover{
+	background: #000000;
+	color: #ffffff;
+	box-shadow: 3px 3px 6px 0 #333333;
+}
+.konkurs{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	height: 680px;
+	width: 100%;
+	background: #6f6;
+}
+.konkurs ul{
+	width: 400px;
+}
+.org{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #e8e8e8;
+	min-height: 680px;
+	width: 100%;
+	background: #ffffff url(../img/org.png) no-repeat 50% 30%;
+	box-shadow: inset 0 0 500px 60px #000000;
+	overflow: hidden;
+}
+.org section{ 
+	display: flex; 
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-left: 150px;
+	margin-right: 150px;
+ }
+ .org span{
+ 	margin: 10px 0;
+ 	width: 150px;
+ 	height: 150px;
+ 	border-radius: 50%;
+
+ 	box-shadow: 0 0 4px 5px #b9ccdd;
+ }
+ .photo-org1{
+ 	background-image: url(../img/arkhipenka.jpg);
+ 	
+ }
+ .photo-org2{
+ 	background-image: url(../img/Khalanskaja.jpg);
+ }
+ .photo-org3{
+ 	background-image: url(../img/Latinskaya.jpg);
+ }
+ .photo-org4{
+	background-image: url(../img/Molchanova.jpg); 
+ }
+ .photo-org5{
+	background-image: url(../img/Mamoiko.jpg);
+ }
+figure{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;			
+	text-align: center;
+	border-radius: 5px;
+	width: 180px;
+	height: 250px;
+	background: rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px 0 #000;
+
+}
+.support{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 300px;
+	overflow: hidden;
+}
+.partners{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	border-right: 1px solid #ffffff;
+	background: #343;
+	min-height: 250px;
+	width: 40%;
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+.partners section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-grow: 1;
+	background: #f2f;
+	overflow: hidden;
+}
+.partner {
+	width: 50px;
+	height: 50px;
+	background: #c1f;
+	margin: 5px 5px;
+}
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #ffffff;
+	background: #212121;
+	min-height: 130px;
+	overflow: hidden;
+}
+footer ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	list-style: none;
+	width: 200px;
+	height: 100px;
+}
