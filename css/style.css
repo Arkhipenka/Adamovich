@@ -155,20 +155,22 @@ main{
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px 0 #091d2b;
 }
-.general button{
+.button{
+	text-decoration: none;
 	outline: none;
-	height: 50px;
-	width: 200px;
-	background: #ffffff;
-	font-size: 14px;
+	padding: 20px;
+	background: #1f76ed;
+	font-family: "Nobile";
+	font-size: 16px;
 	border: none;
-	border-radius: 2px;
+	border-radius: 5px;
 	margin-top: 20px;
-}
-.general button:hover{
-	background: #000000;
 	color: #ffffff;
-	box-shadow: 3px 3px 6px 0 #333333;
+}
+.button:hover{
+	font-weight: bold;
+	color: #bc5519;
+	box-shadow:inset 0 0 10px 2px #333333;
 }
 .konkurs{
 	display: flex;
@@ -247,19 +249,23 @@ figure{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	font-family: "Bebas", sans-serif;
+	font-size: 20px;
+	color:#000000;
 	min-height: 300px;
 	overflow: hidden;
+	background: url(../img/bg-lightl-903.jpg);
 }
 .partners{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	border-right: 1px solid #ffffff;
-	background: #343;
+	box-shadow: 1px 1px 3px 0 #333;
+	background: rgba(135,120,120,0.8);
 	min-height: 250px;
 	width: 40%;
-	margin: 20px 0;
+	margin: 20px 5px;
 	overflow: hidden;
 }
 
@@ -271,13 +277,12 @@ figure{
 	align-items: center;
 	width: 100%;
 	flex-grow: 1;
-	background: #f2f;
+	background: linear-gradient(to right top,#ffffff,#ab9f9f);
 	overflow: hidden;
 }
 .partner {
-	width: 50px;
+	min-width: 50px;
 	height: 50px;
-	background: #c1f;
 	margin: 5px 5px;
 }
 .footer{
