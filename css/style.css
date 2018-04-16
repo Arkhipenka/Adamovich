@@ -36,7 +36,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	margin: 0px;
-
+	
 }
 main{
 	flex-grow: 1;
@@ -99,9 +99,26 @@ header a {
 }
 .social{
 	background: #fff;
-	padding: 12px;
+	padding: 15px;
 	border-radius: 50px;
 
+
+}
+.social:hover{
+	box-shadow: inset 0 0 16px 4px #444;
+}
+.social-fb{
+	background: url(../img/facebook.png) no-repeat 50% 50%;
+}
+.social-vk{
+	background: #fff url(../img/vk_icon.png) no-repeat 49% 49%;
+}
+.social-inst{
+	background: url(../img/social-instagram-new-circle-256.png) no-repeat 50% 50%;
+}
+
+.social-ok{
+	background: url(../img/odnoklassniki-icon.png) no-repeat 50% 50%;
 }
 .lang-nav{
 	display: flex;
@@ -175,15 +192,100 @@ main{
 .konkurs{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: nowrap;
 	height: 680px;
-	width: 100%;
-	background: #6f6;
+	background-image:linear-gradient(to right, #34a8e7, #c4edff);
+	
+
+	overflow: hidden;
+	
 }
-.konkurs ul{
+.info{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+}
+.text-info {
 	width: 400px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	margin:auto; 
+}
+.text-info p:before{
+	content: "";
+	padding: 0 10px;
+	margin-right: 10px;
+	border-radius: 50px;
+	background: url(../img/cropped.png) no-repeat;
+}
+.comp{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	height: 700px;
+	padding: 0 50px;
+	background: url(../img/bg-lightl-903.jpg);
+
+}
+.for-member{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 600px;
+	margin-right: 20px;
+}
+.comp ul{
+	list-style: none;
+	text-align: left;
+	font-family: "Open-sans", sans-serif;
+}
+.important{
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+}
+
+.useful{
+	
+	width: 400px;
+	text-align: center;
+}
+.useful p{
+	font-family: "Open-sans", sans-serif;
+}
+.list li{
+	padding-top: 15px;
+	line-height: 1.5;
+}
+.list li::before{
+	content: "";
+	padding: 10px;
+	margin-right: 5px;
+	background: url(../img/checkmark.png) no-repeat 50% 50%;
+
+}
+
+.download{
+	text-decoration: none;
+	margin-top: 40px;
+	color: #000;
+	padding: 15px 20px;
+	border-radius: 10%;
+	background: url(../img/document-download-outline.png) no-repeat 50% 50%;
+}
+.download:hover{
+		background-color: #ccc;
+		box-shadow:inset 0 0 20px -3px blue;
 }
 .org{
 	display: flex;
@@ -290,10 +392,14 @@ figure{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	font-family: "Open Sans",sans-serif;
+	box-sizing: border-box;
+	padding: 0 100px;
 	color: #ffffff;
 	background: #212121;
 	min-height: 130px;
 	overflow: hidden;
+
 }
 footer ul{
 	display: flex;
@@ -302,6 +408,23 @@ footer ul{
 	align-items: center;
 	flex-wrap: wrap;
 	list-style: none;
-	width: 200px;
+	max-width: 150px;
 	height: 100px;
+}
+
+.autor{
+	font-weight: lighter;
+	font-size: 12px;
+
+}
+.contact h4 {
+	margin: 0;
+	text-align: center;
+}
+.tel::after{
+	content: "";
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 50px;
+	background: url(../img/velcom_logo.png) no-repeat 50% 50%;
 }
