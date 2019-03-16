@@ -1,10 +1,10 @@
 function timer() {
     var nowDate = new Date();
-    var achiveDate = new Date(2018,04,22,23,59,0); //Задаем дату, к которой будет осуществляться обратный отсчет
+    var achiveDate = new Date(2019,06,15,23,59,0); //Задаем дату, к которой будет осуществляться обратный отсчет
     var result = (achiveDate - nowDate)+1000;
     if (result < 0) {
         var elmnt = document.getElementById('outline');
-        elmnt.innerHTML = ' - : - - : - - : - - ';
+        elmnt.innerHTML = ' Прыём работ скончаны ';
         return undefined;
     }
     var seconds = Math.floor((result/1000)%60);
