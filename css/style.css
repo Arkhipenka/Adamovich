@@ -9,8 +9,15 @@
 *{
 	box-sizing: border-box;
 }
+a{
+	text-decoration: none;
+	color: #828382;
+}
 body{
 	margin: 0;
+}
+li{
+	list-style: none;
 }
 .open{
 	display: flex;
@@ -32,7 +39,7 @@ body{
 	font-family: "Lumios", sans-serif;
 	font-weight: 400;
 	line-height: 7rem;
-	
+	font-style: italic;
 	font-size: 7rem;
 	margin: 0;
 }
@@ -44,6 +51,14 @@ body{
 .txt{
 	font-family: "Arial", sans-serif;
 	color: #555656;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.txt_about{
+	font-family: "Arial", sans-serif;
+	color: #828382;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 .block__btn{
 	margin-top: 10px;
@@ -51,7 +66,7 @@ body{
 .btn{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	width: 100px;
+	width: 130px;
 	height: 36px;
 	border-radius: 18px;
 	background-color: #555656;
@@ -64,4 +79,38 @@ body{
 .btn:hover{
 	color: #fff;
 	background: #828382;
+}
+.nav__lang{
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	top: 20px;
+	left: 8vw;
+	color: #bebfbe;
+	padding: 0;
+}
+.lang{
+	padding: 10px 10px 2px;
+	background-color: #0d0d0d;
+	cursor: pointer;
+}
+.lang:hover{
+	border-bottom: 1px solid #fff;
+}
+.lang:hover > a{
+	color: #fff;
+}
+.active a{
+	color: #fff;
+}
+.lang:not(:first-child){
+	display: none;
+}
+.nav__lang:hover > .lang{
+	display: block;
+}
+.JP, .CN{
+	font-size: 3rem;
+}
+.CN{
+	font-size: 5rem;
 }
